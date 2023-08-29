@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<app-header></app-header>
+
+<body>
+    <div class="container">
+        <select class="infoCompte" (change)="ShowOperation($event)">
+           <option  *ngFor="let comptes of compte" >
+               {{comptes.numcompte}} {{comptes.devise}} {{comptes.solde}}
+            </option>
+        </select>
+
+        <p>Résumé</p>
+        <hr class="hr">
+        <div class="bal">
+            <p class="balance">Balance Courante </p>
+            <p class="montant">{{operation[0].devise}} {{operation[0].solde}}</p>
+        </div>
+
+        <div class="bal">
+            <p class="balance">Balance Disponible </p>
+            <p class="montant">{{operation[0].devise}} {{operation[0].solde}}</p>
+        </div>
+
+
+        <table class="etat">
+            <tr>
+                <td><a href="/operation/{{this.numcompte}}">Transactions</a></td>
+                <td><a href="#">Etats de comptes</a></td>
+                <td><a href="#">Résumé</a></td>
+            </tr>
+        </table>
+
+        <p><a href="#" class="trans">Recherche de transactions</a></p>
+        <hr class="hr2">
+
+        <table class="list">
+            <thead>
+                <td></td>
+                <td>Date</td>
+                <td>Description</td>
+                <td>Chèque</td>
+                <td>Type</td>
+                <td>Montant de l'opération</td>
+                <td>Balance Courante</td>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let operations of operation">
+                    <td class="plus"> + </td>
+                    <td>{{operations.dateop}}</td>
+                    <td></td>
+                    <td></td>
+                    <td>{{operations.type}}</td>
+                    <td>{{operations.montant}}</td>
+                    <td>{{operations.balance}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+</body>
+<app-footer></app-footer>
+
+</html>

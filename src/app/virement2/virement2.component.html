@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<app-header></app-header>
+
+<body>
+    <div class="container">
+        <div class="vente">
+            <div class="vente1">
+                <em class="bleu">USD 1.00 </em>
+                <em class="vert">ACHAT 114.0000 </em>
+                <em class="rouge">VENTE 115.0000</em>
+            </div>
+            <div class="vente2">
+                <em class="vert">Limite Achat USD 2,500.00 </em>
+                <em class="rouge"> Limite Vente USD 500.00</em>
+            </div>
+        </div>
+        <p style="color:rgb(244, 119, 30); font-size: medium; font-weight: bold; margin-bottom: 50px;">
+            TRANSFERT {{transfert}}</p>
+        <div class="contenu">
+            <form #form="ngForm" (ngSubmit)="VirerCompte(form)" class="body">
+                <div *ngIf="messageDevise" class="alert alert-danger">
+                    {{messageDevise}}
+                </div>
+                <table>
+                    <tr>
+                        <td class="label">DE*</td>
+                        <td class="champ"><select placeholder="selectionner" name="origine" ngModel required>
+                    <option *ngFor="let comptes of compte" value="{{comptes.numcompte}}">
+                        {{comptes.numcompte}} {{comptes.devise}} {{comptes.solde}}
+                    </option>
+                </select></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">A*</td>
+                        <td class="champ"><select placeholder="selectionner" name="destination" ngModel required>
+                        <option *ngFor="let benes of bene" value="{{benes.numCompte}}">
+                            {{benes.nomPrenom}} 
+                        </option>
+                </select></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">MONTANT*</td>
+                        <td class="champ"><input type="number" name="montant" ngModel required></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">DESCRIPTION</td>
+                        <td class="champ"><input type="text" name="desc" ngModel></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="label">QUAND</td>
+                        <td class="champ"><select placeholder="selectionner" name="quand" ngModel>
+                    <option value="Maintenant">Maintenant</option>
+                </select></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button [routerLink]="['/transfert']" id="cancel" type="cancel">ANNULER</button>
+                            <button id="submit" type="submit">SOUMETTRE</button>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+            <div id="client" class="body">
+                <p>Gérer les bénéficiaires</p>
+                <p><a [routerLink]="['/client/ajout']" href="#">Ajouter </a> Nouveau Bénéficiaire</p>
+                <p><a [routerLink]="['/client/update']" href="#">Modifier </a> Bénéficiaires existants</p>
+                <p><a href="#">Supprimer </a> Bénéficiaire existant avec qui vous ne faites plus affaire</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<app-footer></app-footer>
+
+</html>

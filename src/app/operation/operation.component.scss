@@ -1,0 +1,104 @@
+.phrase {
+    color: white;
+}
+
+select {
+    width: 600px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.hr {
+    width: 600px;
+    margin-top: 0px;
+}
+
+.balance {
+    font-weight: bold;
+    color: #0055a5;
+}
+
+.bal {
+    display: flex;
+    width: 600px;
+}
+
+.bal strong {
+    float: right;
+}
+
+.etat {
+    border: 1px solid rgb(244, 119, 30);
+    width: 600px;
+    margin-top: 40px;
+}
+
+.etat tr td a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.etat tr td:hover {
+    background-color: rgb(244, 119, 30);
+}
+
+.etat td {
+    border: 1px solid rgb(244, 119, 30);
+    width: 200px;
+    text-align: center;
+    height: 40px;
+}
+
+.list {
+    margin-top: 40px;
+    border: 1px solid gray;
+    width: 1200px;
+}
+
+.title thead td {
+    padding-left: 3px;
+}
+
+.hr2 {
+    font-weight: bold;
+    font-size: large;
+    width: 1200px;
+}
+
+thead {
+    color: #0055a5;
+    font-weight: bold;
+}
+
+tr {
+    border-bottom: 1px solid #DCDCDC;
+    border-top: 1px solid #DCDCDC;
+    height: 30px;
+}
+
+.plus {
+    color: blue;
+    font-weight: bold;
+}
+
+.trans {
+    margin-top: 40px;
+    float: right;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.montant {
+    margin-right: 0px;
+    margin-left: 300px;
+}
+
+.infoCompte {
+    color: #0055a5;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 3px;
+}

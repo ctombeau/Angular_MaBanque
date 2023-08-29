@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaBanque online</title>
+</head>
+
+<body>
+    <img class="imgBody" src="../../assets/images/ebanque.jpg">
+    <nav class="navbar navbar-expand-lg " style="background-color:cornflowerblue">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <div class="img">
+                    <img src="../../assets/images/banque.webp" />
+
+                </div>
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <form #form="ngForm" (ngSubmit)="Login(form)">
+        <p class="formTitre mt-2">SE CONNECTER</p>
+        <hr>
+
+        <div class="form-group mt-2">
+            <label class="mt-2">CODE UTILISATEUR</label> <br>
+            <input type="text" name="name" class="form-control mt-2" ngModel>
+        </div>
+
+        <div class="form-group mt-2">
+            <label class="mt-2">MOT DE PASSE</label> <br>
+            <input type="password" name="pass" class="form-control mt-2" ngModel>
+        </div>
+
+        <div class="form-group mt-2">
+
+            <button type="submit" class="btn mt-4">CONNEXION</button>
+        </div>
+
+
+        <p class="mt-2"><a href="#">Code utilisateur oublié</a></p>
+        <p class="mt-2"><a href="#">Code utilisateur oublié</a></p>
+        <p style="color: rgb(244, 119, 30)" class="mt-2">S'inscrire à MaBanque Online pour:</p>
+        <p class="mt-2"><a href="#"> -Entreprise</a></p>
+        <p class="mt-2"><a href="/client"> -Particulier</a></p>
+        <div class="digicert">
+            <img src="../../assets/images/digicert.jfif">
+        </div>
+    </form>
+
+    <!-- <div class="info">
+        <h2 class="bienvenue">BIENVENUE SUR</h2>
+        <div class="nomprojet">
+            <img src="../../assets/images/world.png">
+            <h3 class="online">MaBanque Online</h3>
+        </div>
+    </div> -->
+
+    <!-- <div class="banniere">
+
+    </div>
+
+    <div class="banniere2">
+
+    </div> -->
+
+</body>
+
+<footer>
+    <div class="footer">
+        <p><a href="#">A propos de nous</a> | <a href="#">Accesibilité</a> | <a href="#">Confidentialité</a> | <a href="#">Sécurité</a> | <a href="#">Feed-back</a> | <a href="#">FAQ</a> | <a href="#">Support technique</a> <br>
+            <a href="#">Tousndroits réservés @ 2022 MaBanque S.A</a>
+        </p>
+    </div>
+</footer>
+
+</html>

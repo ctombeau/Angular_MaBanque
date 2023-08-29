@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:cornflowerblue">
+    <a class="navbar-brand" href="#">
+        <img src="../../assets/images/banque.webp" />
+    </a>
+
+</nav>
+
+
+<body>
+    <div class="container mt-4">
+        <p style="color: rgb(244, 119, 30);">INSCRIVEZ-VOUS POUR LES SERVICES BANCAIRES</p>
+        <form #f="ngForm" (ngSubmit)="postClient(f)">
+            <div class="content">
+                <tr>
+                    <td><label>NUMERO DE COMPTE*</label> </td>
+                    <td><input type="texte" name="numcpte" /></td>
+                    <td><label>PRENOM*</label></td>
+                    <td><input type="texte" name="prenom" /></td>
+                </tr>
+
+            </div>
+
+            <div class="content">
+                <tr>
+                    <td><label>NOM*</label></td>
+                    <td><input type="texte" name="nom" /></td>
+                    <td> <label>CODE UTILISATEUR*</label></td>
+                    <td><input type="texte" name="code" /></td>
+                </tr>
+            </div>
+
+            <div class="content">
+                <tr>
+                    <td><label>PIECE D'IDENTITE*</label></td>
+                    <td> </td>
+                    <td> <label>ADRESSE*</label></td>
+                    <td><input type="texte" name="adresse" /></td>
+                </tr>
+            </div>
+
+            <div class="content">
+                <tr>
+                    <td><label><select>
+                        <option>Sélectionner</option>
+                        <option>NIF</option>
+                        <option>CIN</option>
+                        <option>Numéro de passport</option>
+                    </select></label></td>
+                    <td><input type="texte" name="piece" /></td>
+                    <td> <label>TELEPHONE*</label></td>
+                    <td><input type="texte" name="phone" /></td>
+                </tr>
+            </div>
+
+            <div class="content">
+                <tr>
+                    <td><label>QUESTIONS DE SECURITE(3 OBLIGATOIRES)*</label></td>
+                    <td></td>
+                    <td> <label>EMAIL*</label></td>
+                    <td><input type="texte" name="mail" /></td>
+                </tr>
+            </div>
+
+            <div class="content">
+                <tr>
+                    <td><label><select>
+                        <option>Sélectionner</option>
+                        <option>Quelle est ta couleur préférée?</option>
+                        <option>Qui est ton meilleur ami(e)?</option>
+                        <option>Quel est ton fruit préféré?</option>
+                        <option>Quel est ton pseudo?</option>
+                        <option>Quel est le sport préféré?</option>
+                        <option>Quel est votre film préféré?</option>
+                    </select></label></td>
+                    <td><input type="texte" name="rep1" /></td>
+                    <td> <label>DATE NAISSANCE*</label></td>
+                    <td><input type="texte" name="naissance" /></td>
+                </tr>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+</body>
+
+<app-footer>
+</app-footer>
+
+</html>

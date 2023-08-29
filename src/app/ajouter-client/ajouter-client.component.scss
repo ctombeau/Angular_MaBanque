@@ -1,0 +1,81 @@
+.phrase {
+    color: white;
+}
+
+.vente {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.vente1 {
+    border: 1px solid cornflowerblue;
+    width: 400px;
+    float: right;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.vente2 {
+    border: 1px solid cornflowerblue;
+    width: 400px;
+    float: right;
+    border-radius: 10px;
+}
+
+.bleu {
+    color: blue;
+}
+
+.vert {
+    color: green;
+}
+
+.rouge {
+    color: red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+td {
+    color: cornflowerblue;
+}
+
+select {
+    width: 400px;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+.label {
+    float: right;
+    margin-right: 1opx;
+}
+
+.champ {
+    margin-left: 20px;
+}
+
+#cancel {
+    background-color: white;
+    margin: 10px;
+    color: rgb(244, 119, 30);
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+}
+
+#submit {
+    background-color: cornflowerblue;
+    margin: 10px;
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+}

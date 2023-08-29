@@ -1,0 +1,47 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:cornflowerblue">
+    <a class="navbar-brand" href="#">
+        <img src="../../assets/images/banque.webp" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <i class="fa-solid fa-wallet"></i>
+                <a class="nav-link" [routerLink]="['/utilisateur']" href="#" style="color:white">COMPTES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">PAIEMENT DE <br/>FACTURE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/transfert']" style="color:white">TRANSFERTS</a>
+            </li>
+            <li class="nav-item">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <a class="nav-link" href="#" style="color:white">RECHARGER UN <br/>PORTABLE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">WESTERN UNION</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">TRANSACTIONS <br/> EN ATTENTE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">0PTIONS</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="logout">
+        <p><i class="fa-solid fa-pen"></i></p>
+        <a href="#" (click)="Logout()">SE DECONNECTER</a>
+    </div>
+</nav>
+<div style="background-color: #0055a5;">
+    <p class="phrase">Bienvenue {{nomComplet}}. Dernière connexion 05/23/2022 02:22 PM</p>
+</div>

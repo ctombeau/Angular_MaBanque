@@ -1,0 +1,60 @@
+img {
+    width: 80px;
+    height: 80px;
+    margin-left: 100px;
+}
+
+.phrase {
+    color: white;
+}
+
+.footer {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    height: 60px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+.collapse ul li a {
+    font-size: 10px;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 40px;
+    border-color: cornflowerblue;
+    margin-right: 50px;
+}
+
+select {
+    height: 30px;
+    border-color: cornflowerblue;
+    margin-right: 50px;
+}
+
+label {
+    color: cornflowerblue;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.content {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+td {
+    width: 200px;
+    display: inline-block;
+}
